@@ -122,10 +122,10 @@
     var flip = 'odd';
 
     if (Drupal.ModuleFilter.activeTab.id == 'all-tab') {
-      var selector = 'table.package tbody tr td label > strong';
+      var selector = 'table.package tbody tr td label strong';
     }
     else {
-      var selector = 'table.package tbody tr.' + Drupal.ModuleFilter.activeTab.id + '-content td label > strong';
+      var selector = 'table.package tbody tr.' + Drupal.ModuleFilter.activeTab.id + '-content td label strong';
     }
 
     $(selector).each(function(i) {
