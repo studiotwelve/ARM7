@@ -1,0 +1,125 @@
+/* normalize */
+html,body{margin: 0}
+body{background:#eddfc2}
+body,h1,h2,h3,h4,h5,h6,p,.console,.messages,div.status,.ok,.warning,.error{color:#7c3b10}
+h1,h2,h3,h4,h5,h6,p,div.form-item{margin:0; line-height:normal; font-weight:normal !important}
+div.messages{padding-top:0;margin:.3em 0}
+dl,menu,ol,ul,.item-list ul{margin:0}
+#secondary-menu{text-align:right}
+#header ul.inline li{padding:0 0 0 1em}
+#page{max-width:100%; padding:0}
+#header{padding:1em 0 1em}
+#main{padding:3em 0 0}
+#main.no-nav{padding-top:0}
+#navigation{padding:0}
+
+.region-header #block-search-form{
+background-color:#fec; background-image:linear-gradient(#fec,#e6b37c);
+border:solid 1px #b8875f; border-radius:.6em; padding:1em; margin:0 auto;}
+
+/* tabs */
+#main ul.primary{font-size:.8em; margin:0; padding:0}
+#main ul.primary li{margin:0 0 0 .1em; border:none}
+#main ul.primary a{
+margin:0; color:#7c3b10;
+border:solid 1px #b8875f;
+border-radius:.3em; border-bottom-left-radius:.3em; border-bottom-right-radius:.3em;
+background-image:none; background-color:#fec}
+#main ul.primary a:hover{background-color: #7c3b10; color:#fec; text-shadow: none}
+#main ul.primary a.active,
+#main ul.primary a.active:hover{color:#7c3b10; background-color:transparent; background-image:none; text-shadow:none; border:none}
+
+.region-highlighted .block{color:#fff; text-shadow:0px 1px 3px #000; padding:.5em; margin:0 .5em .5em 0;
+line-height:normal; border:solid .5em #b5a56f; border-radius:1.5em; min-width:256px; max-width:312px; min-height: 216px;
+background-color:#6f5011; background-image:linear-gradient(#a17f3, #674b11); box-sizing:border-box}
+.region-highlighted .block .block-title{color:#fff; font-size:3.3em; line-height:.8em}
+.region-highlighted .block p{color:#fff}
+
+.region-highlighted .block ul.menu {list-style:none}
+.region-highlighted .block ul.menu a {color:#fff}
+
+/* weather */
+.region-highlighted .block.weatherBlock{border-color:#9bb46d; padding-bottom:0;
+background-color:#3c6d10; background-image:linear-gradient(#68a036, #306511)}
+.weatherBlock .block-title{opacity: .8; text-shadow:-2px -2px 0px #000,-2px 2px 0px #000,2px 2px 0px #000,2px -2px 0px #000}
+.weatherItem{background-position:-.3em -.6em}
+.weatherCity{display:none}
+.weatherTemp{
+text-align:right; font-size:3em; color:#fff; margin:-.5em 0 0 0;
+font-weight:bold; letter-spacing: -.1em;}
+.weatherDesc{text-align:right; font-size:1.25em; font-weight:bold; margin:1em 0 0}
+.weatherRange{text-align:right; font-size:1em; clear:both}
+.weatherForecast{margin:16px -.5em 0}
+.weatherForecastItem{padding:.25em 0; margin:0; box-sizing:border-box;
+background-color:rgba(255,255,255,.15); background-position:110% .5em;
+float:right; min-width:49%; max-width:49.5%; word-wrap:break-word; word-break:break-word}
+.weatherForecast .weatherForecastItem:first-child{margin:0; float:left}
+.weatherForecast .weatherForecastItem:last-child:after{content:""; clear:both; display:table}
+.weatherForecastDay,.weatherForecastText,.weatherForecastRange{padding:0 .3em}
+.weatherForecastDay{font-size:1.25em; font-weight:bold}
+.weatherForecastText{font-size:.6em}
+.weatherForecastDate{display:none}
+.weatherForecastRange{font-size:.8em}
+.weatherForecastRange span{display:inline}
+
+/* delete this line if link:true in script.js remeber to set linktarget:'_blank'
+.weatherLink{clear:both; padding:.5em 0 .25em; text-align:right; font-size:1.65em; font-weight:bold; text-shadow:0px 1px 0px #fff}
+.weatherLink a{color:#2a768f; text-decoration:none;
+border:solid 1px #999; box-shadow:0px 2px 7px #000; background-color:#eee;
+border-radius:.3em; background-image:linear-gradient(#eee,#bbb); padding:.25em}
+.weatherLink a:hover{color:#666; background-image:linear-gradient(#ccc,#fff)} /* forecast link styles */
+
+/* Simplenews Block */
+.block-simplenews p,.block-simplenews form{padding:.5em}
+.block-simplenews form > div{margin-top:-.5em}
+.block-simplenews .form-type-textfield{display:inline}
+.block-simplenews .form-text{max-width:50%}
+
+#footer #block-system-main-menu > ul.menu > li.expanded{display:block; border-radius:.5em;
+padding:.5em; margin:.5em; background-color:rgba(0,0,0,.05); border:solid 3px rgba(0,0,0,.1); position:relative}
+
+/* some runaway layout fixes */
+.comments input.form-text{display:block; max-width:100%}
+
+@media (min-width:641px){/* Some mobile layout fixes, medium and up */
+.region-header #block-search-form{position:relative; top:0; margin-bottom:0; margin-top:-6em; float:right}
+.region-header #block-search-form:after{content:""; float:none; clear:both}}
+
+@media (min-width:641px) and (max-width:960px){ /* medium only */
+/* Layout when there is only one sidebar, the right one */
+.sidebar-second #content{
+float:left; width:66.667%;
+margin-left:0%; margin-right:-66.667%}
+.sidebar-second .region-sidebar-second{
+float:left; width:33.333%;
+margin-left:66.667%; margin-right:-100%}}
+
+@media (max-width:640px){/* small screens ≤ 640 */
+.region-header{text-align:center; padding-top:1em} .region-header #block-search-form{display:inline-block}
+#logo{float:none; display:block} #logo img{display:block; margin:0 auto}
+.sidebar-second #content,
+.sidebar-second .region-sidebar-second{float:none; width:100%; margin:0}}
+
+@media (min-width:961px){/* desktop fixes */
+#main ul.primary{position:relative; top:-2.5em; border: none; float:right; max-width:60%; text-align:right}
+#header{padding:1em 3em 1em 3em} #navigation{padding:0 3em}
+#main{padding:3em 3em 0 3em} #main.no-nav{padding-top:0}
+#page{max-width:1140px}
+/* Highlighted region Hacking */
+.region-highlighted .block{float:left}
+.region-highlighted:after{content:""; display:table; clear:both}
+/* Footer > Menu Hacking */
+#footer #block-system-main-menu > ul.menu > li.expanded{float:left}
+/* delete this line to make vocab menu react on hover
+#footer #block-system-main-menu > ul.menu > li.expanded > ul.menu{
+display:none; position: absolute}
+#footer #block-system-main-menu > ul.menu > li.expanded:hover > ul.menu{
+display:block}/**/}
+
+
+/* cssfx isn't playing ball in webkit */
+.region-header #block-search-form{background-image:-webkit-linear-gradient(#fec,#e6b37c)}
+.region-highlighted .block{background-image:-webkit-linear-gradient(#a17f3, #674b11)}
+.weatherBlock{background-image:-webkit-linear-gradient(#68a036, #306511)}
+.weatherLink a{background-image:-webkit-linear-gradient(#eee,#bbb)}
+.weatherLink a:hover{background-image:-webkit-linear-gradient(#ccc,#fff)}

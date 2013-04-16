@@ -1,0 +1,8 @@
+# humanstxt.org/
+# TEAM
+	Project Manager - Adrienne Mollete
+	Developer - Michael Hurley
+# TECHNOLOGY
+	php, HTML5, CSS3, jQuery, drupal, h5bp, normalize, modernizr, 1140gs, fontSquirell, css3-Media-Queries, cssFx, tinyMCE
+# THANKS
+	Mom!
