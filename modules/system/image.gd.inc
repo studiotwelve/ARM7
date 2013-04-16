@@ -346,16 +346,7 @@ function image_gd_create_tmp(stdClass $image, $width, $height) {
  */
 function image_gd_get_info(stdClass $image) {
   $details = FALSE;
-  // $data = getimagesize($image->source); //was original line
-
-	$img = drupal_realpath($image->source);
-	
-	if (filesize($img) > 10 )
-	{ $data = getimagesize($img);}
-	
-	// this filters out files that have a size of less than x bytes which is probably a corrupted file.
-	// I found this original patch on http://drupal.org/node/1522348, but it didn't work because the filesize() function returns and int
-	// not a bool
+  $data = getimagesize($image->source);
 
   if (isset($data) && is_array($data)) {
     $extensions = array('1' => 'gif', '2' => 'jpg', '3' => 'png');

@@ -35,8 +35,11 @@ background-color:#6f5011; background-image:linear-gradient(#a17f3, #674b11); box
 .region-highlighted .block .block-title{color:#fff; font-size:3.3em; line-height:.8em}
 .region-highlighted .block p{color:#fff}
 
-.region-highlighted .block ul.menu {list-style:none}
-.region-highlighted .block ul.menu a {color:#fff}
+.region-highlighted .block-menu{max-width:20%; box-sizing:border-box}
+.region-highlighted .block-menu ul.menu{padding:0}
+.region-highlighted .block-menu ul.menu li.leaf,
+.region-highlighted .block-menu ul.menu li.expanded{list-style-image:none; list-style-type:none}
+.region-highlighted .block-menu ul.menu a{color:#fff; text-decoration:none}
 
 /* weather */
 .region-highlighted .block.weatherBlock{border-color:#9bb46d; padding-bottom:0;
